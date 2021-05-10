@@ -5,8 +5,11 @@ This is a python module to perform file operations on large CSV files. It can be
 Python 3.x (https://www.python.org/downloads/)
 Library: pandas (https://pypi.org/project/pandas/)
 
+# Sample CSV
+"Buyer-Product-List.csv"
+
 # Use cases
-Please refer spreadsheet: "CSV-Inspection-Tool-Use-Cases"
+"CSV-Inspection-Tool-Use-Cases.xlsx"
 
 # Note
 Keep both scripts under same parent folder and run the main script.
