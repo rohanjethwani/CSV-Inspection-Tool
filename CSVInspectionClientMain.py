@@ -2,13 +2,12 @@ import datetime
 import os
 import sys
 import argparse
-import datatime
 
 from OperationsOnCSV import perform_operations_on_csv
 
 def valid_date(dt):
     try:
-        datetime.datetime.strptime(dt, "%Y%m%d")
+        datetime.strptime(dt, "%Y%m%d")
         return dt
     except ValueError:
         message = "Not a valid date: '{0}'. Expected format is YYYYmmdd.".format(dt)
@@ -93,7 +92,7 @@ def parse_args(argv):
 
 
 def defined_kwargs(**kwargs):
-    return {k: v for k,v in kwargs.iterms() if v is not None}
+    return {k: v for k,v in kwargs.items() if v is not None}
 
 
 def main(argv):
